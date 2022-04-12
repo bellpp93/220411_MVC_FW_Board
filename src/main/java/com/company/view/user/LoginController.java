@@ -2,6 +2,7 @@ package com.company.view.user;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.company.mvc_fw_board.user.UserDAO;
 import com.company.mvc_fw_board.user.UserDO;
@@ -25,10 +26,12 @@ public class LoginController implements Controller {
 		
 		// 3. 포워딩
 		if(user != null) {
-//			System.out.println("로그인 성공!!");
+			// System.out.println("로그인 성공!!");
+			HttpSession session = request.getSession();
+			session.setAttribute("IdKey", id);
 			return "getBoardList.do";
 		} else {
-//			System.out.println("로그인 실패!!");
+			// System.out.println("로그인 실패!!");
 			return "login";
 		}
 	}
