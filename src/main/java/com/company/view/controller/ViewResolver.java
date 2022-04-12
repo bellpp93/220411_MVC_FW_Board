@@ -20,6 +20,6 @@ public class ViewResolver {
 	 */
 	// 사용자(개발자) 정의 메소드 구현
 	public String getView(String viewName) {
-		return prefix + viewName + suffix;
+		return prefix + viewName + suffix;  // "./login.jsp"
 	}
 }
