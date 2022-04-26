@@ -30,13 +30,13 @@
 				<tr>
 					<td bgcolor="orange" width="70">제목</td>
 					<td align="left">
-						<input name="title" type="text" value="${board.title}">
+						<input name="title" type="text" value="${board.title}"/>
 					</td>
 				</tr>
 				<tr>
 					<td bgcolor="orange">작성자</td>
 					<td align="left">
-						<input name="title" value="${board.writer}">
+						<input name="writer" value="${board.writer}"/>
 					</td>
 				</tr>
 				<tr>
